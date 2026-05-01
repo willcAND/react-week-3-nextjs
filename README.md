@@ -1,14 +1,13 @@
 # Next.js Fundamentals
 
 A small teaching codebase for Next.js fundamentals. Every example is
-intentionally minimal
+intentionally minimal.
 
 ## Contents
 
 ```
 next-fundamentals/
 ├── app/                    App Router examples
-├── docs/                   Narrative talking points
 ├── package.json
 └── next.config.js
 ```
