@@ -1,0 +1,113 @@
+:root {
+  --fg: #101828;
+  --muted: #667085;
+  --bg: #ffffff;
+  --accent: #2e5bff;
+  --panel: #f5f7fb;
+  --border: #e4e7ec;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+}
+.nav nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+.nav a { color: var(--fg); text-decoration: none; }
+.nav a:hover { color: var(--accent); }
+
+main { padding: 1.5rem; max-width: 960px; margin: 0 auto; }
+
+h1 { margin-top: 0; }
+
+.lede {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  background: var(--panel);
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.demo-grid article {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.demo-grid h3,
+.demo-grid p {
+  margin: 0;
+}
+
+.demo-grid a {
+  margin-top: auto;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.image-demo {
+  margin: 1.5rem 0;
+}
+
+.image-demo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+code.inline {
+  background: var(--panel);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+small.note { color: var(--muted); }
+
+pre {
+  background: #0b1021;
+  color: #e6e6e6;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
