@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 export default function Counter() {
+  console.log("Client component: Visible in the browser");
   const [count, setCount] = useState(0);
 
   function increment() {

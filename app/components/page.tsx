@@ -1,6 +1,7 @@
 import Counter from "./Counter";
 
 export default function ComponentsPage() {
+  console.log("Server component: Not visible in the browser");
   const renderedAt = new Date().toLocaleTimeString();
 
   return (
